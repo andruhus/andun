@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+/*Найти значение функции y = 3·x6 – 6·x2 – 7 при данном значении x.*/
+
+int main()
+{
+	int a;
+	cin >> a;
+	int x6 = 1;
+	int x2 = 1;
+	for(int i = 0;i<6;i++)
+		x6 *= a;
+	for(int i = 0;i<2;i++)
+		x2 *= a;
+	cout << (3*x6 - 6*x2 - 7);
+	return 0;
+}
